@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc -w"
+    "start": "tsup --watch",
+    "build": "tsup"
   },
   "bin": {
     "hidetoxic-ssg": "bin/hidetoxic-ssg.js"
@@ -14,16 +15,23 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
     "@types/node": "^18.11.9",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",
+    "@types/rollup": "^0.54.0",
+    "ora": "^6.1.2",
+    "rollup": "^3.4.0",
+    "tsup": "^6.5.0",
     "typescript": "^4.9.3"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^2.2.0",
     "cac": "^6.7.14",
+    "fs-extra": "^10.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "serve": "^14.1.2",
     "vite": "^3.2.4"
   }
 }
